@@ -1,11 +1,11 @@
 class Employee:
-    def _init_(self, emp_id, name, age, salary):
+    def __init_(self, emp_id, name, age, salary):
         self.emp_id = emp_id
         self.name = name
         self.age = age
         self.salary = salary
     
-    def _str_(self):
+    def __str_(self):
         return f"ID: {self.emp_id}, Name: {self.name}, Age: {self.age}, Salary: {self.salary}"
 
 def sort_by_age(emp_list):
@@ -47,5 +47,5 @@ def main():
     for emp in sorted_employees:
         print(emp)
 
-if _name_ == "_main_":
+if __name_ == "__main_":
     main()
